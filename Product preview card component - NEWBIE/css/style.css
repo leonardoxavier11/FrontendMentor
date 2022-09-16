@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 5px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {  /* Utilizo o FlexBox para centralizar o container no meio da tela. OBS: É importante que a "height esteja em 100vh */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    max-width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    color: black;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    margin: 10px 0px;
+
+}
+
+.price-atz {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+}
+.price {
+    display: flex;
+}
+
+.buy {
+    text-align: center;
+}
+
+.btn-buy {
+    margin-bottom: 0px;
+    background-color:  hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.bi {
+    color:white;
+    font-size: 1.2rem;;
+}
+
+.btn-buy:hover, .bi:hover {
+    background-color: rgb(9, 78, 9);
+    transition: 0.5s;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-height: 700px)
+{
+    * {
+        margin-bottom: 15px;
+    }
+}
+@media (min-width: 670px)
+{
+    .container { /* Utilizo o FlexBox para centralizar o container no meio da tela. OBS: É importante que a "height esteja em 100vh */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box { /* Utilizo o Grid para dividr o container em 2x50% */
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header, picture {
+        margin-bottom: 0px;
+    }
+    .img {
+        margin: 0px;
+        border-radius: 10px 0px 0px 10px;
+        height: 100%;
+        width: 100%;
+    }
+}
